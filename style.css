@@ -1,0 +1,93 @@
+/* Reset and basic styling */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fdfdfd;
+    background-image: url('https://images.unsplash.com/photo-1594980596870-8aa52a78d8cd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNhbGN1bGF0b3J8ZW58MHx8MHx8fDA%3D'); /* Add your background image here */
+  }
+  
+   /* Add background image to the calculator */
+.calculator {
+    width: 260px;
+    padding: 20px;
+    background-image: url('Transparent'); /* Add your background image here */
+    background-size: cover;  /* Ensures the background covers the whole area */
+    background-position: center;  /* Ensures the image is centered */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .calculator {
+    width: 260px;
+    padding: 20px;
+    background-color: rgb(6, 100, 6);
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .display {
+    margin-bottom: 20px;
+    text-align: right;
+  }
+  
+  #screen {
+    width: 100%;
+    height: 50px;
+    font-size: 24px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: right;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  button {
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:active {
+    background-color: #ddd;
+  }
+  
+  button.btn-primary {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  button.btn-warning {
+    background-color: #ffc107;
+    color: rgb(235, 13, 13);
+  }
+  
+  button.btn-success {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  button.btn-danger {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  button.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+  }
+  

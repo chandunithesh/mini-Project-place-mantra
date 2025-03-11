@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Calculator</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="calculator">
+      <div class="display">
+        <input type="text" id="screen" disabled>
+      </div>
+      <div class="buttons">
+        <button class="btn btn-primary" onclick="appendToScreen(7)">7</button>
+        <button class="btn btn-primary" onclick="appendToScreen(8)">8</button>
+        <button class="btn btn-primary" onclick="appendToScreen(9)">9</button>
+        <button class="btn btn-warning" onclick="performOperation('+')">+</button>
+
+        <button class="btn btn-primary" onclick="appendToScreen(4)">4</button>
+        <button class="btn btn-primary" onclick="appendToScreen(5)">5</button>
+        <button class="btn btn-primary" onclick="appendToScreen(6)">6</button>
+        <button class="btn btn-warning" onclick="performOperation('-')">-</button>
+
+        <button class="btn btn-primary" onclick="appendToScreen(1)">1</button>
+        <button class="btn btn-primary" onclick="appendToScreen(2)">2</button>
+        <button class="btn btn-primary" onclick="appendToScreen(3)">3</button>
+        <button class="btn btn-warning" onclick="performOperation('*')">*</button>
+
+        <button class="btn btn-primary" onclick="appendToScreen(0)">0</button>
+        <button class="btn btn-danger" onclick="clearScreen()">AC</button>
+        <button class="btn btn-warning" onclick="performOperation('%')">%</button>
+        <button class="btn btn-warning" onclick="performOperation('/')">/</button>
+
+        <button class="btn btn-success" onclick="calculateResult()">=</button>
+        <button class="btn btn-secondary" onclick="performSquare()">x²</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
